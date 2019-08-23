@@ -1,0 +1,43 @@
+package com.jar.implementation;
+
+public class SegregateOddEven {
+
+	public static void main(String[] args) {
+		int a[]={1,2,3,5,7,9,11,4,6,10};
+		evenOddPartition(a);
+		 for(int k=0; k<a.length;k++)
+				System.out.print(" "+a[k]);
+		/*int i=0, j=a.length-1;
+		
+		while (i <= j && (a[i] & 1) == 0) 
+		{ 
+			i++; 
+		}
+		while (i <= j && (a[j] & 1) != 0) 
+		{ 
+			j--; 
+		}
+		
+		System.out.println("i: "+i+" j: "+j);
+		  int swap = a[i];
+	      a[i] = a[j];
+	      a[j] = swap;
+
+	      for(int k=0; k<a.length;k++)
+		System.out.print(" "+a[k]);*/
+	}
+	public static int evenOddPartition(int[] data) {
+	    int i = 0, j = data.length - 1;
+	    do {
+	        while (i <= j && (data[i] & 1) == 0) { i++; }
+	        while (i <= j && (data[j] & 1) != 0) { j--; }
+	        if (i >= j) {
+	            return i;
+	        }
+	        int swap = data[i];
+	        data[i] = data[j];
+	        data[j] = swap;
+	    } while (true);
+	}
+
+}

@@ -1,0 +1,30 @@
+package com.jar.implementation;
+
+public class StringCommon {
+
+	public static void main(String[] args) {
+		String a = "string";
+		String b = "strong";
+		char[] m = a.toCharArray();
+		char[] n = b.toCharArray();
+		
+		for(int i = 0; i<m.length; i++){
+			for(int j =0; j<n.length; j++){
+				if(m[i]==n[j])
+					System.out.print(m[i]);
+			}
+		}
+		System.out.println("\nReverse is :"+ReverseString("12345"));
+	}
+	public static String ReverseString(String str)
+	{
+		char[] a = str.toCharArray();
+		String s = "";
+		System.out.println(a.length);
+		for(int i = a.length ; i>0; i--){
+			s= s+a[i];
+		}
+		return s;
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.jar.implementation;
+
+import java.util.Arrays;
+
+public class AlphabeticalWordSentence {
+
+	public static void main(String[] args) {
+		String exmpl=new String("I Love Java Programming");  
+		System.out.println("original : "+exmpl);
+		String[] parts = exmpl.split("\\s+");   
+		Arrays.sort(parts);  
+		StringBuilder sb = new StringBuilder();  
+		for(String s:parts){  
+		   sb.append(s);  
+		   sb.append(" ");  
+		}  
+
+		String sorted = sb.toString().trim(); 
+		System.out.println("Sorted : "+ sorted);
+	}
+
+}

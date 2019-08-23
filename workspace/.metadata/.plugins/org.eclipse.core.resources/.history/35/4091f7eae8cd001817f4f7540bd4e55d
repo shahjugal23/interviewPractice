@@ -1,0 +1,25 @@
+package com.jar.implementation;
+
+public class AddNumberWithoutOperator {
+
+	public static void main(String[] args) {
+		int x = 20, y=2;
+		System.out.println("Binary of x is "+ Integer.toBinaryString(x));
+		System.out.println("Binary of y is "+ Integer.toBinaryString(y));
+	
+		
+		while(x!=0){
+			int carry = x & y; 
+			System.out.println("Carry : "+ carry);
+			
+			y = x ^ y;
+			System.out.println("X ^ Y :"+ y);
+			
+			x =  carry << 1;
+			System.out.println("Shifting the carry : "+ x);
+		}
+		System.out.println("Sum is "+ y);
+		
+	}
+
+}

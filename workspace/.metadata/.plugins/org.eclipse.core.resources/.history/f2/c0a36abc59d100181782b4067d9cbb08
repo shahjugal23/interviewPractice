@@ -1,0 +1,23 @@
+package com.jar.implementation;
+
+public class OddEvenPair {
+
+	public static void main(String[] args) {
+		int a[]={1,2,3};
+		int evenPairCount =0 , oddPairCount=0;
+		for(int i=0; i<a.length;i++){
+			for(int j=1;j<a.length-1;j++)
+			{
+				if(i<j && ((a[i]+a[j])%2 !=0))
+				{
+					oddPairCount++;	
+				}
+				else if(i<j && ( (a[i]+a[j])%2==0)){
+					evenPairCount++;
+				}
+			}
+		}
+		System.out.println("Even Pair Count: "+evenPairCount);
+		System.out.println("Odd Pair Count: "+oddPairCount);
+	}
+}

@@ -1,0 +1,22 @@
+package com.jar.implementation;
+
+public class ReverseDigits {
+
+	public static void main(String[] args) {
+		int n = 12345, reverse = 0;
+		
+		while(n!=0){
+			int d = n %10;
+			System.out.println(d);
+			reverse = reverse * 10 + d;
+			System.out.println("r:"+reverse);
+			n = n/10;
+		}
+		System.out.println("The reverse number is :"+reverse);
+		
+		if (reverse == n){
+			System.out.println("Its a palindrome!!!");
+		}
+	}
+
+}

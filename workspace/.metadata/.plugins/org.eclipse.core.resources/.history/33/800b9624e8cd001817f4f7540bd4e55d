@@ -1,0 +1,22 @@
+package com.jar.implementation;
+
+public class AddNumberWithoutOperator {
+
+	public static void main(String[] args) {
+		int x = 3, y=2;
+		
+		while(y!=0){
+			int carry = x & y; 
+			System.out.println("Carry : "+ carry);
+			
+			x = x ^ y;
+			System.out.println("X ^ Y :"+ x);
+			
+			y =  carry << 1;
+			System.out.println("Shifting the carry : "+ y);
+		}
+		System.out.println("Sum is "+ x);
+		
+	}
+
+}

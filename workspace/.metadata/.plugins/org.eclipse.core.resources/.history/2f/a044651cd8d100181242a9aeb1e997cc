@@ -1,0 +1,15 @@
+package com.jar.implementation;
+
+public class SegregateOddEven {
+
+	public static void main(String[] args) {
+		int a[]={1,2,3,5};
+		
+		int i=0, j=a.length-1;
+		
+		System.out.println(j);
+		
+		
+	}
+
+}
