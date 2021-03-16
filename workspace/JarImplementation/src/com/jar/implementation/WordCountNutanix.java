@@ -6,7 +6,7 @@ public class WordCountNutanix {
 
 	public static void main(String[] args) {
 		String sentence = "hello hello hi this is test message hi";
-		
+//		String sentence = "hello hello hello"; // It fails here. You need to increment the i loop else it goes in infinite loop
 		String words[] = sentence.split("\\s");
 		
 		Arrays.sort(words);
