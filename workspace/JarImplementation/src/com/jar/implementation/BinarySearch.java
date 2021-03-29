@@ -38,5 +38,30 @@ class BinarySearch {
 			System.out.println("Element not present");
 		else
 			System.out.println("Element found at index " + result);
+
+		
+		// Using simple loop
+		int a[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		for (int i = 0; i < a.length; i++) {
+			System.out.print("\t" + a[i]);
+		}
+		System.out.println();
+		int key = 9;
+
+		int low = 0, high = a.length - 1;
+		while (low <= high) {
+			System.out.println("HIGH : " + high);
+			System.out.println("LOW : " + low);
+			int mid = (low + high) / 2;
+			System.out.println("MIDDLE : " + mid);
+			if (a[mid] == key) {
+				System.out.println("Found at : " + mid);
+				break;
+			} else if (key > a[mid]) {
+				low = mid + 1;
+			} else {
+				high = mid - 1;
+			}
+		}
 	}
 }

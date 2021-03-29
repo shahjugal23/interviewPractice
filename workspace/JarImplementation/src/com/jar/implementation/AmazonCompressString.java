@@ -23,6 +23,8 @@ public class AmazonCompressString {
 		System.out.println("Array is : "+ arr);*/
 		
 		String str="aaabbbbccdd";
+//		String str="aabb";
+//		String str="wwwwaaadexxxxxxywww";
 		char arr[] =str.toCharArray();
 		
 		String newstring = "";

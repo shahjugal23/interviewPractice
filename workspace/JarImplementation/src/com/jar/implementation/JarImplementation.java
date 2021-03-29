@@ -8,7 +8,7 @@ public class JarImplementation {
 		
 		System.out.println("Jar implementation will run now.");
 		Calculator c = new Calculator();
-	c.main(args);
+		c.main(args);
 	}
 
 }

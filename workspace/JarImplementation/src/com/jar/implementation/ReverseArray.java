@@ -18,6 +18,19 @@ public class ReverseArray {
         for (int k = 0; k < n; k++) { 
             System.out.print(a[k]); 
         } 
+        
+        String s = "Jugal";
+        
+        char charArr[] = s.toCharArray();
+        int first = 0, last = charArr.length-1;
+        for(int cnt=0; cnt<charArr.length/2;cnt++){
+            char temp = charArr[first];
+            charArr[first] = charArr[last];
+            charArr[last] = temp;
+            first++;
+            last--;
+        }
+        System.out.println(charArr);
 	}
 
 }

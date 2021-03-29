@@ -30,7 +30,7 @@ public class PrimeNumber {
 		}
 		
 		// Flags and half 
-		int num = 38; 
+		int num = 37; 
 		System.out.println("num/2 = "+ num/2);
 		boolean flag= true;
 		for(int i = 2; i<= num/2; i++){

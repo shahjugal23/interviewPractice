@@ -1,11 +1,9 @@
 package com.jar.implementation;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
-import java.util.Map.Entry;
 import java.util.Set;
-
-import com.self.study.Calculator;
 
 public class HashMapBasics{
 
@@ -27,6 +25,17 @@ public class HashMapBasics{
 		
 		while(it.hasNext()){
 			System.out.println(" "+hm.get(it.next()));
+		}
+		
+		Set<String> set1 = new HashSet<String>();
+		set1.add("A");
+		set1.add("B");
+		set1.add("A");
+		System.out.println("Set values:");
+		Iterator<String> it1 = set1.iterator();
+		while(it1.hasNext())
+		{
+			System.out.println(" "+it1.next());
 		}
 		
 	}
